@@ -1,0 +1,188 @@
+/* new contact */
+.heading{
+    text-align: center;
+    padding:2.5rem 0;
+    margin-top: -10rem;
+  }
+  
+  .heading span{
+    font-size: 2.3rem;
+    background:rgba(97, 149, 207, 0.2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  
+  .contact_container{
+    background: var(--colour-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 35rem;
+    margin: 8rem auto;
+    border-radius: 1.5rem;
+}
+
+/* .......ASIDE.......... */
+.aside_contact{
+    background:  var(--colour-primary);
+    padding: 2rem;
+    border-radius: 2rem;
+    bottom: 10rem;
+    position: relative;
+}
+.aside_img{
+    width: 16rem;
+    margin-bottom:1rem;
+}
+.aside_contact h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.aside_contact p{
+    text-align: left;
+    margin-bottom: 2.8rem;
+    font-size: 1rem;
+}
+
+.contact_list li{
+    display: flex;
+    gap: 1.2rem;
+align-items: center;
+margin-bottom: 1rem;
+}
+
+.contact_social{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.contact_social a{
+    background: var(--colour-bg1);
+    padding: 1.2rem;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    transition: var(--transition);
+}
+
+.contact_social a:hover{
+    background: transparent;
+}
+
+/* ........Form........ */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    margin-right: 4rem;
+}
+
+.form{
+    display: flex;
+    gap: 1.2rem;
+}
+
+form input[type="text"]{
+    width: 50%;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--colour-bg);
+    color: #fff;
+}
+
+form .btn{
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* .........Media Quries(tablet) */
+
+@media screen and (max-width:1024px){
+
+  .contact_container{
+    gap: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .heading span{
+    font-size: 2rem;
+    padding:1rem 1rem;
+  }
+  .aside_contact{
+    width: auto;
+    padding: 1.5rem;
+    bottom: 0;
+  }
+  form{
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+}
+
+/* .......media quries(phone) */
+
+@media screen and (max-width:600px) {
+  /* .contact{
+    overflow: hidden;
+  } */
+  .contact_container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 0;
+    padding: 0;
+  }
+  /* .aside_contact{
+  margin: 0 auto;
+  border-radius: 0;
+ }
+  .aside_img{
+    margin: 0 auto;
+  } */
+  /* .aside_contact{
+    width: 83%;
+    padding: 1.5rem;
+    bottom: 0;
+    border-radius: 0;
+  } */
+.heading{
+  margin-top: 0;
+  /* margin-right: 4rem; */
+}
+.heading span{
+  font-size: 1.5rem;
+  padding:0.4rem;
+}
+.forms{
+  margin:0 1.5rem 3rem;
+  }
+  .form{
+    flex-direction: column;
+   
+  }
+  /* .contact_social{
+    margin: 5rem;
+  } */
+  .form input[type="text"]{
+    width: 100%;
+border-radius: 3rem;
+  }
+  .forms input{
+
+border-radius: 3rem;
+  }
+  .forms textarea{
+border-radius: 1rem;
+  }
+  .forms input,textarea::placeholder{
+    text-align: center;
+  }
+}

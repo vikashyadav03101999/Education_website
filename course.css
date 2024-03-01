@@ -1,0 +1,107 @@
+#course-list{
+  display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 5rem;
+    margin-top: 3rem;
+    width: fit-content;
+    height: 300px;
+   
+}
+.courses{
+margin: 2rem;
+overflow: hidden;
+text-align: center;
+}
+.courses h1{
+  text-align: center;
+font-weight: none;
+}
+.course{
+  background-color: var(--colour-bg1);
+  box-shadow: inset 0 0 3rem rgba(0,0,0,0.8);
+  border-radius: 6rem;
+}
+.course h3{
+  font-size: 1.3rem;
+  margin-top: 4.2rem;
+  text-decoration: underline;
+ 
+}
+.course p{
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.details-button{
+  display: inline-block;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background: var(--colour-white);
+    color: var(--colour-black);
+    padding: 0.7rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.details-button:hover{
+  background: transparent;
+  color: var(--colour-white);
+  border-color: var(--colour-white);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #b13333;
+    /* overflow: hidden; */
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+  }
+  #enroll-button{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background: var(--colour-white);
+    color: var(--colour-black);
+    padding: 0.7rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+#enroll-button:hover{
+    background: transparent;
+    color: var(--colour-white);
+    border-color: var(--colour-white);
+}
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
